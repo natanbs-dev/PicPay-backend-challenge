@@ -1,4 +1,4 @@
-package com.natanbsdev.picpaysimplificado.repository;
+package com.natanbsdev.picpaysimplificado.repositories;
 
 import com.natanbsdev.picpaysimplificado.domain.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
