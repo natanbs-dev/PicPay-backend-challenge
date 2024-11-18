@@ -1,5 +1,6 @@
 package com.natanbsdev.picpaysimplificado.domain.user;
 
+import com.natanbsdev.picpaysimplificado.dtos.UserDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -30,11 +31,22 @@ public class User {
     @Column(unique = true)
     private String email;
 
-    private String passowrd;
+    private String password;
 
 //    saldo desse usuário
     private BigDecimal balance;
 
     @Enumerated(EnumType.STRING)
-    private userType userType;
+    private UserType userType;
+
+//    public User(UserDTO data) {
+//    }
+
+    public User(UserDTO data) {
+        this.firstName = data.firstName();
+        this.lastName = data.lastName();
+        this.balance = data.balance();
+        this.userType = data.userType();
+        this.password = data.password();
+    }
 }
