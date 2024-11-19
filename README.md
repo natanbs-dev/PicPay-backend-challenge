@@ -16,7 +16,7 @@ transferências entre eles.
 
 A seguir estão algumas regras de negócio que são importantes para o funcionamento do PicPay Simplificado:
 
-- Para ambos tipos de usuário, precisamos do `Nome Completo`, `CPF`, `e-mail` e `Senha`. CPF/CNPJ e e-mails devem ser
+- Para ambos tipos de usuário, precisamos do `firstName`,`lastName` `document`,`password` e `e-mail`. O `document` e `email` devem ser
   únicos no sistema. Sendo assim, seu sistema deve permitir apenas um cadastro com o mesmo CPF ou endereço de e-mail;
 
 - Usuários podem enviar dinheiro (efetuar transferência) para lojistas e entre usuários;
